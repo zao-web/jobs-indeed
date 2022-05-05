@@ -1,5 +1,5 @@
 {
-    "name": "jobapis/jobs-indeed",
+    "name": "zao-web/jobs-indeed",
     "type": "library",
     "description": "Making it simple to integrate your application with Indeed Jobs API.",
     "keywords": [
@@ -7,6 +7,12 @@
         "api client",
         "object",
         "indeed"
+    ],
+     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/zao-web/jobs-common.git"
+        }
     ],
     "homepage": "https://github.com/JobBrander/jobs-indeed",
     "license": "Apache-2.0",
@@ -24,7 +30,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "jobapis/jobs-common": "^2.1.2"
+        "zao-web/jobs-common": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": ">=4.6",
