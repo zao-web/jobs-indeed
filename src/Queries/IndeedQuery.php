@@ -30,6 +30,15 @@ class IndeedQuery extends AbstractQuery
     protected $start;
 
     /**
+     * Limit
+     *
+     * Limit
+     *
+     * @var integer
+     */
+    protected $limit;
+
+    /**
      * Get baseUrl
      *
      * @return  string Value of the base url to this api
