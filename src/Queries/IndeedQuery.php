@@ -57,8 +57,7 @@ class IndeedQuery extends AbstractQuery
     protected function requiredAttributes()
     {
         return [
-            'q',
-            'l',
+            'q'
         ];
     }
 }
