@@ -21,13 +21,8 @@ class IndeedProvider extends AbstractProvider
             'sourceId' => $payload['guid'],
         ]);
 
-        $lat = explode(' ', $payload['georss:point'][0] );
-        $lng = explode(' ', $payload['georss:point'][1] );
-
         return $job->setCompany($payload['source'])
-            ->setDatePostedAsString($payload['pubDate'])
-            ->setLatitude($lat)
-            ->setLongitude($lng);
+            ->setDatePostedAsString($payload['pubDate']);
     }
 
      /**
